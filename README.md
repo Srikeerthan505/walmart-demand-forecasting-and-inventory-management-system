@@ -39,3 +39,22 @@ walmart-forecast/
 ├── app.py                 # Main Streamlit dashboard script
 ├── requirements.txt       # Python dependencies
 └── README.md
+
+## ▶️ Run Locally
+
+To run this project on your local machine, follow these steps:
+# Clone the repository
+git clone [https://github.com/Srikeerthan505/walmart-forecast](https://github.com/Srikeerthan505/walmart-forecast)
+
+# Navigate to the project directory
+cd walmart-forecast
+
+# Install the required dependencies
+pip install -r requirements.txt
+
+# Launch the Streamlit app
+streamlit run app.py
+
+##📊 Dataset
+
+The project utilizes the Walmart Store Sales Forecasting dataset from Kaggle, containing comprehensive historical sales data across multiple Walmart stores and departments.
