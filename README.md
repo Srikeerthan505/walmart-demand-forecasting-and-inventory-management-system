@@ -1,48 +1,41 @@
 # 🛒 Walmart Demand Forecasting & Inventory Optimization System
 
-![Python](https://img.shields.io/badge/Python-3.10-blue)
-![Streamlit](https://img.shields.io/badge/Streamlit-Deployed-brightgreen)
-![Model](https://img.shields.io/badge/Model-ARIMA-orange)
+[![Python 3.10](https://img.shields.io/badge/Python-3.10-blue.svg)](https://www.python.org/)
+[![Streamlit Deployed](https://img.shields.io/badge/Streamlit-Deployed-FF4B4B.svg)](https://walmart-demand-forecasting-srikeerthan.streamlit.app/)
+[![Model ARIMA](https://img.shields.io/badge/Model-ARIMA-orange.svg)]()
+
+> **Live Application:** [View the Interactive Streamlit Dashboard Here](https://walmart-demand-forecasting-srikeerthan.streamlit.app/)
 
 ## 📌 Overview
-A machine learning web application that forecasts future product demand 
-for Walmart stores using ARIMA time series modeling and recommends 
-optimal inventory levels — helping businesses reduce overstock and stockouts.
+
+An end-to-end data science and analytics web application that forecasts future product demand for Walmart stores using ARIMA time series modeling. By translating predictive data into actionable business intelligence, this system recommends optimal inventory levels to help businesses reduce overstock, minimize holding costs, and prevent stockouts.
 
 ## 🚀 Features
-- 📈 Interactive weekly sales forecasting
-- 📦 Automated inventory recommendations
-- 🔍 Anomaly & trend detection
-- 📊 Live Streamlit dashboard
-- 🗂 Raw data explorer
 
-## 🛠 Tech Stack
+* 📈 **Interactive Weekly Sales Forecasting:** Generates reliable future demand predictions across different store branches.
+* 📦 **Automated Inventory Recommendations:** Calculates optimal weekly stock levels based on forecasted demand.
+* 🔍 **Anomaly & Trend Detection:** Automatically identifies historical sales spikes and seasonal trends for better context.
+* 📊 **Live Streamlit Dashboard:** A user-friendly, real-time interface for stakeholders to interact with the data.
+* 🗄️ **Raw Data Explorer:** Allows users to drill down into the underlying historical data (400K+ records).
+
+## 🛠️ Tech Stack
+
 | Tool | Purpose |
-|------|---------|
-| Python | Core language |
-| Pandas | Data processing |
-| Statsmodels | ARIMA model |
-| Streamlit | Web dashboard |
+| :--- | :--- |
+| **Python** | Core programming language |
+| **Pandas** | Data processing, cleaning, and feature extraction |
+| **Statsmodels** | Time series modeling (ARIMA) |
+| **Streamlit** | Web application and interactive dashboard framework |
 
 ## 📁 Project Structure
+
+```text
 walmart-forecast/
-├── data/          # Raw CSV datasets
-├── src/           # Core logic modules
+├── data/                  # Raw CSV datasets
+├── src/                   # Core logic modules
 │   ├── data_loader.py
 │   ├── preprocess.py
 │   └── model.py
-├── app.py         # Streamlit dashboard
-├── requirements.txt
+├── app.py                 # Main Streamlit dashboard script
+├── requirements.txt       # Python dependencies
 └── README.md
-
-## ▶ Run Locally
-```bash
-git clone https://github.com/Srikeerthan505/walmart-forecast
-cd walmart-forecast
-pip install -r requirements.txt
-streamlit run app.py
-```
-
-## 📊 Dataset
-[Walmart Store Sales Forecasting - Kaggle](https://www.kaggle.com/c/walmart-recruiting-store-sales-forecasting)
-
