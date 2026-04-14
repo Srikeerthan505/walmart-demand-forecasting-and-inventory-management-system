@@ -15,9 +15,9 @@ st.title("🛒 Walmart Demand Forecasting System")
 # Load
 df = preprocess(load_data())
 
-# Sidebar
-store = st.sidebar.selectbox("Store", df['Store'].unique())
-dept = st.sidebar.selectbox("Department", df['Dept'].unique())
+# Sidebar (Sorted Dropdowns)
+store = st.sidebar.selectbox("Store", sorted(df['Store'].unique()))
+dept = st.sidebar.selectbox("Department", sorted(df['Dept'].unique()))
 
 filtered = df[(df['Store']==store)&(df['Dept']==dept)]
 filtered = filtered[['Date','Weekly_Sales']].set_index('Date')
