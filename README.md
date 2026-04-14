@@ -10,7 +10,7 @@
 
 An end-to-end data science and analytics web application that forecasts future product demand for Walmart stores using time series modeling (ARIMA and LSTM). By translating predictive data into actionable business intelligence, this system recommends optimal inventory levels to help businesses reduce overstock, minimize holding costs, and prevent stockouts.
 
-## 🚀 Features
+## 🪼 Features
 
 * 📈 **Interactive Weekly Sales Forecasting:** Generates reliable future demand predictions across different store branches.
 * 📦 **Automated Inventory Recommendations:** Calculates optimal weekly stock levels based on forecasted demand.
