@@ -40,6 +40,7 @@ walmart-forecast/
 ├── requirements.txt       # Python dependencies
 └── README.md
 
+
 ## ▶️ Run Locally
 
 To run this project on your local machine, follow these steps:
