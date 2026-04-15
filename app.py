@@ -12,8 +12,13 @@ st.set_page_config(page_title="Walmart Forecast", layout="wide")
 
 st.title("🛒 Walmart Demand Forecasting System")
 
-# Load
-df = preprocess(load_data())
+# ----------------- MEMORY FIX (CACHING) -----------------
+# This forces Streamlit to load the 400k+ rows ONCE instead of every time you click a button
+@st.cache_data
+def get_clean_data():
+    return preprocess(load_data())
+
+df = get_clean_data()
 
 # ----------------- DYNAMIC DROPDOWNS -----------------
 # 1. Select Store first
